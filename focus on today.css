@@ -1,0 +1,172 @@
+body {
+    background-color: #FFFFFF;
+    margin: 0;
+
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+main {
+    margin-bottom: 50px;
+}
+
+.title {
+    color: yellowgreen;
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+    margin: 20px;
+}
+
+.title span {
+    color: #000000;
+}
+
+.app-container {
+
+    background-color: #FBFBFB;
+    max-width: 600px;
+    margin-inline: auto;
+    border-radius: 10px;
+    padding: 20px 20px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.son-icon {
+    height: 39px;
+    width: 26px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.sub-title {
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.progress-lable {
+    font-size: 14px;
+    color: #858585;
+    margin-bottom: 18px;
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: #48A3001A;
+    border-radius: 15px;
+}
+
+.progress-value {
+
+    height: 20px;
+    width: 0%;
+    background-color: #48A300;
+    border-radius: 15px;
+    font-size: 10px;
+    font-weight: 500;
+    color: #EEFFE0;
+    display: flex;
+    align-items: center;
+    transition: width 0.2s ease-in-out;
+}
+.progress-value span{
+    padding-left: 10px;
+}
+
+.goal-error {
+    position: absolute;
+    top: 240px;
+    display: none;
+    font-size: 14px;
+    color: red;
+}
+.showeror .goal-error{
+display: block;
+}
+
+.goal-container {
+    margin-top: 85px;
+    height: 82px;
+    /* width: 100%; */
+    background-color: #FFFFFF;
+    border: 1px solid #0000001A;
+    border-radius: 17px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    margin-top: 40px;
+
+}
+
+.checkbox {
+    height: 24px;
+    width: 24px;
+    border: 1px solid #0000001A;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    margin-left: 10px;
+    cursor: pointer;
+}
+/* this check box icon is default display none  */
+.checkbox .check-icon{
+    display: none;
+}
+.goal-container .goal-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-weight: 600;
+}
+
+/* when click this check box then this completed class is added  using js  */
+.completed .check-icon{
+    display: block;
+}
+
+.completed .goal-input{
+    color: #48A300;
+    text-decoration: line-through;
+}
+
+.goal-container input::placeholder {
+    color: #D9D9D9;
+}
+
+.end-goal-lable {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 50px;
+}
+
+.madwith {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:768px) {
+    .app-container {
+        margin: 0px 25px;
+    }
+}
